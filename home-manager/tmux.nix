@@ -24,21 +24,19 @@
       }
       {
         plugin = tmuxPlugins.mkTmuxPlugin {
-	    pluginName = "cpu";
-	    version = "unstable-2023-01-06";
-	    src = fetchFromGitHub {
-	owner = "tmux-plugins";
-	repo = "tmux-cpu";
-	rev = "98d787191bc3e8f19c3de54b96ba1caf61385861";
-	sha256 = "sha256-ymmCI6VYvf94Ot7h2GAboTRBXPIREP+EB33+px5aaJk=";
-    };
-    };
-    }
+          pluginName = "cpu";
+          version = "unstable-2023-01-06";
+          src = fetchFromGitHub {
+            owner = "tmux-plugins";
+            repo = "tmux-cpu";
+            rev = "98d787191bc3e8f19c3de54b96ba1caf61385861";
+            sha256 = "sha256-ymmCI6VYvf94Ot7h2GAboTRBXPIREP+EB33+px5aaJk=";
+          };
+        };
+      }
     ];
 
     # Replaces ~/.tmux.conf
     extraConfig = (builtins.readFile ../config/tmux.conf);
   };
-
-
 }

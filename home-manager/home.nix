@@ -44,10 +44,10 @@
     username = "manuel";
     homeDirectory = "/home/manuel";
     packages = with pkgs; [
-	git
-	bat
-	fzf
-	flameshot
+      git
+      bat
+      fzf
+      flameshot
     ];
   };
 
@@ -59,8 +59,8 @@
   programs.home-manager.enable = true;
   programs.git = {
   	enable = true;
-	userName = "Manuel";
-	userEmail = "manutepowa@gmail.com";
+    userName = "Manuel";
+    userEmail = "manutepowa@gmail.com";
   };
 
   # Nicely reload system units when changing configs
