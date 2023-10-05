@@ -67,8 +67,17 @@
 
   home.sessionVariables = {
   	EDITOR = "nvim";
-	TERMINAL = "kitty";
+    SHELL = pkgs.zsh;
   };
+
+  # programs.bash.enable = true;
+  # programs.bash.shellAliases = {
+  #   nxu = "home-manager switch --flake ~/nix-standard/#manuel@VM";
+  # };
+
+  # home.shellAliases = {
+  #   nxu = "home-manager switch --flake ~/nix-standard/#manuel@VM";
+  # };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "23.05";
