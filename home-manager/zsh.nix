@@ -5,7 +5,9 @@
 		enable = true;
 		enableAutosuggestions = true;
 		enableCompletion = true;
-		syntaxHighlighting.enable = true;
+		# syntaxHighlighting = {
+		# 	enable = true;
+		# };
 		shellAliases = {
 			ll = "ls -l";
 			nxu = "home-manager switch --flake ~/nix-conf/#manuel@VM";
