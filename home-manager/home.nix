@@ -53,6 +53,15 @@
 
   # Add stuff for your user as you see fit:
   programs.neovim.enable = true;
+  programs.kitty = {
+    enable = true;
+    font = {
+      # Font - Laptop has size manually changed at home.nix
+      name = "JetBrainsMono Nerd Font";
+      #size = 8;
+    };
+    shellIntegration.enableZshIntegration = true;
+  };
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
@@ -68,6 +77,8 @@
   home.sessionVariables = {
   	EDITOR = "nvim";
     SHELL = pkgs.zsh;
+    TERMINAL = pkgs.kitty;
+    TERM = "kitty";
   };
 
   # programs.bash.enable = true;
