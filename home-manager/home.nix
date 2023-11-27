@@ -47,6 +47,7 @@
     username = "manuel";
     homeDirectory = "/home/manuel";
     packages = with pkgs; [
+      btop
       git
       bat
       fzf
