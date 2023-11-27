@@ -30,6 +30,9 @@
       #     patches = [ ./change-hello-to-hi.patch ];
       #   });
       # })
+      (final: prev: {
+        neovim = inputs.manutepowa-nvim.packages.${final.system}.default;
+      })
     ];
     # Configure your nixpkgs instance
     config = {
@@ -48,11 +51,12 @@
       bat
       fzf
       flameshot
+      neovim
     ];
   };
 
   # Add stuff for your user as you see fit:
-  programs.neovim.enable = true;
+  # programs.neovim.enable = true;
   programs.kitty = {
     enable = true;
     font = {
