@@ -53,6 +53,7 @@
       fzf
       flameshot
       neovim
+      ripgrep
     ];
   };
 
